@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemple : comment est construit un article</title>
+    <!-- ====== À MODIFIER : titre (balise title ci-dessus), image, date, texte ====== -->
+    <meta name="image" content="images/exemple3.svg">   <!-- chemin de l'image affichée AVANT le titre -->
+    <meta name="date" content="2026-10-15">    <!-- AAAA-MM-JJ (facultatif) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+    <div class="gradient-bg"><div class="blob blob-1"></div><div class="blob blob-2"></div><div class="blob blob-3"></div></div>
+    <button class="theme-toggle" id="themeToggle" aria-label="Changer le thème"><span id="themeIcon">☀️</span></button>
+    <div class="container"><div class="card">
+        <div id="blog-root" data-mode="article"></div>
+        <!-- Le texte : séparez les paragraphes par une ligne vide -->
+        <script type="text/plain" id="texte">
+Voici un article d'exemple : ouvrez son fichier (article3.html) pour voir comment il est écrit, puis copiez-le pour créer les vôtres.
+
+Un article se compose de quatre éléments. Le titre se règle dans la balise <title> tout en haut du fichier. L'image, affichée avant le titre, se règle dans la ligne <meta name="image">. La date, facultative, se règle dans <meta name="date"> au format AAAA-MM-JJ. Enfin, le texte se trouve dans le bloc <script type="text/plain" id="texte"> situé dans le corps de la page.
+
+Dans le texte, chaque paragraphe est séparé du suivant par une ligne vide, comme ici. Un simple retour à la ligne sans ligne vide reste dans le même paragraphe.
+Cette ligne-ci, par exemple, est dans le même paragraphe que la précédente.
+
+Pour l'image, déposez votre fichier (.jpg, .png, .webp…) dans le dossier images/ puis écrivez son chemin, par exemple images/ma-photo.jpg. Une image large (environ 1200 x 600 pixels) rend le mieux.
+
+Pour publier, nommez votre fichier article4.html, article5.html, etc. sans sauter de numéro, puis envoyez-le sur GitHub. L'article apparaît automatiquement dans la page Blog, le plus récent en premier.
+        </script>
+    </div></div>
+    <script src="blog.js"></script>
+</body>
+</html>
