@@ -29,3 +29,11 @@ h1{font-family:'Syne',sans-serif;font-size:clamp(2rem,5vw,3.2rem);font-weight:80
 .post p{color:var(--text-muted);line-height:1.6}
 .empty{color:var(--text-muted)}
 @media(max-width:640px){.card{padding:30px 22px}.theme-toggle{top:15px;right:15px}}
+.texte h2,.texte h3{font-family:'Syne',sans-serif;text-transform:uppercase;margin:34px 0 14px;line-height:1.2}
+.texte h2{font-size:1.6rem}.texte h3{font-size:1.2rem}
+.texte strong{color:var(--text-main)}
+.texte a{color:var(--text-main);text-decoration:underline}
+.texte ul{margin:0 0 22px 1.3em;color:var(--text-muted);font-size:1.1rem;line-height:1.8}
+.texte blockquote{border-left:2px solid var(--text-main);padding:4px 0 4px 18px;margin:0 0 22px;color:var(--text-muted);font-size:1.1rem;line-height:1.8;font-style:italic}
+.texte code{background:var(--card-border);padding:2px 6px;font-size:.95em}
+.texte img{display:block;max-width:100%;margin:0 0 22px;border:1px solid var(--card-border)}
